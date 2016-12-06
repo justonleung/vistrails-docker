@@ -19,3 +19,8 @@ RUN \
 
 ADD startup.xml /root/.vistrails/startup.xml
 
+ADD run_workflow.py /
+
+ADD nigeria-avg.vt /
+
+CMD ["python","run_workflow.py","nigeria-avg.vt","nigeria-avg"]
